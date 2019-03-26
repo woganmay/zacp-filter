@@ -1,0 +1,28 @@
+{
+    "name": "woganmay/zacp-filter",
+    "description": "An automated filter to intercept bad language on forum.capitalist.org.za",
+    "type": "flarum-extension",
+    "keywords": ["formatting"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wogan May",
+            "email": "wogan.may@gmail.com"
+        }
+    ],
+    "require": {
+        "flarum/core": "^0.1.0-beta.8"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
+        "flarum-extension": {
+            "title": "ZACP Filter",
+            "icon": {
+                "image": "icon.png",
+                "backgroundColor": "#ffffff"
+            }
+        }
+    }
+}
