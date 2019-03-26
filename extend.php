@@ -10,6 +10,12 @@ use s9e\TextFormatter\Configurator;
 return [
     (new Extend\Formatter)
         ->configure(function (Configurator $config) {
-            $config->Censor->add('nuggets');
+
+            $words = file_get_contents(__DIR__ . "badwords.txt");
+            $words = explode("\n", $words);
+
+            foreach($words as $word)
+                $config->Censor->add(trim($word));
+                
         })
 ];
